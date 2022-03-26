@@ -3,15 +3,17 @@ import React, { useEffect, useState } from 'react';
 import Mobile from '../Mobile/Mobile';
 import Cart from '../Cart/Cart';
 
+
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [addCart, setAddCart] = useState([]);
+
     useEffect(()=>{
         fetch('mobiledb.json')
         .then(res => res.json())
         .then(data => setProducts(data))
     },[])
-    
+
     const addToCart = (product) =>{
         const newCart = [...addCart, product];
         if(newCart.length > 4){
@@ -21,13 +23,9 @@ const Shop = () => {
             setAddCart(newCart);
         }
     }
-    // const randomItem  = () =>{
-    //     var random = addCart[Math.floor(Math.random() * addCart.length)]
-    //     console.log(random);
-    //     setAddCart(random);
-    // }
+
     const clearCart = () =>{
-        
+        setAddCart([]);
     }
     return (
         <div className='shop-container mt-5 container-fluid'>
@@ -43,8 +41,8 @@ const Shop = () => {
                         addCart.map(mobile => <Cart mobile = {mobile}key={mobile.id}/>)
                     }
                         <div>
-                            <button className='btn choice-btn d-block'>Choice One</button>
-                            <button onClick={()=>clearCart} className='btn choice-btn'>Choice Again</button>
+                            <button className='btn choice-btn d-block'>Suggest One</button>
+                            <button onClick={()=>clearCart()} className='btn choice-btn'>Remove All</button>
                         </div>
                     </div>
                    </div>
