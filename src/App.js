@@ -10,7 +10,7 @@ function App() {
       <Shop/>
 
       <h3>How react work?</h3>
-      <p><strong>Answer:</strong>React creates a VIRTUAL DOM in memory. Instead of manipulating the browser's DOM directly, React creates a virtual DOM in memory where it does all the necessary manipulating, before making the changes in the browser DOM. then changes only what needs to be changed</p>
+      <p><strong>Answer:</strong>React is a library for building user interfaces.It converts JavaScript code to JSX(JavaScript XML) by the help of react package. It makes a virtual dom when users interact on the client site. React compares changes between real DOM and virtual DOM. And it update only the specific changes on the Real DOM without reloading the webpage by the help of React DOM. As it works without reloading the page it is very fast and popular among the developers</p>
       <br />
       <h3>Difference between State and Props?</h3>
       <p>1.	Props are read-only or State changes can be asynchronous.
