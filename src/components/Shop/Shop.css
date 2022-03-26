@@ -1,0 +1,11 @@
+.choice-btn{
+    background-color: slateblue;
+    color: white;
+    margin-top: 20px;
+    border: 2px solid slateblue;
+}
+.choice-btn:hover{
+    background-color: white;
+    color: slateblue;
+    border: 2px solid slateblue;
+}

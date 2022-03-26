@@ -1,3 +1,3 @@
 # MOBILE DOKAN
 
-[Live Link: ](https://github.com/facebook/create-react-app).
+Click Here: [Live link](https://github.com/facebook/create-react-app).
